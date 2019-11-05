@@ -3,7 +3,6 @@ body {
   background-color:pink;
   position: relative;
   margin:auto;
-
 }
 *{
   margin:0;
@@ -15,12 +14,12 @@ body {
     max-width: 900px;
     position: relative;
     margin: auto;
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-areas: "header header"
                           "nav		nav"
                           "left		right"
                           "footer	footer";
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 500x 500px;
     grid-template-rows: 120px 50px 450px 200px;
   }
   h1 {
@@ -32,6 +31,11 @@ body {
     font-family:lobster;
     text-align: center;
     font-size:30px;
+  }
+  p {
+    max-width: 500px;
+    text-align: center;
+    margin:2px;
   }
   
   header {
