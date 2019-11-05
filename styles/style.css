@@ -1,14 +1,15 @@
+
+body {
+  background-color:pink;
+  position: relative;
+  margin:auto;
+
+}
 *{
   margin:0;
   padding:0;
   border:0;
   }
-
-body {
-  background-color:pink;
-
-}
-
   .container {
     display: grid;
     max-width: 900px;
@@ -19,8 +20,8 @@ body {
                           "nav		nav"
                           "left		right"
                           "footer	footer";
-    grid-template-columns: 500px 400px;
-    grid-template-rows: 120px 50px 600px 200px;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 120px 50px 450px 200px;
   }
   h1 {
     font-family:lobster;
@@ -66,11 +67,7 @@ body {
     height:auto;
   }
 }
-*{
-    margin:0;
-    padding:0;
-    border:0;
-    }
+
       html {
         font-size: 15px;    
         font-family: "Open Lato", sans-serif; 
