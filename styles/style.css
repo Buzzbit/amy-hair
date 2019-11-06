@@ -20,7 +20,7 @@ body {
                           "left		right"
                           "footer	footer";
     grid-template-columns: 500x 500px;
-    grid-template-rows: 120px 20px 450px 200px;
+    grid-template-rows: 120px 40px 450px 200px;
   }
   h1 {
     font-family:lobster;
@@ -48,14 +48,34 @@ body {
     border: solid 2px purple;
   }
   
-  nav {
-    background-color:pink;
-    grid-area: nav;
-    text-align:center;
-    word-spacing: 10px;
-    
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:none;
+    background-color:purple;
+  }
+  li {
+    float:left;
+    border-right: 1px solid #bbb;
+
+  }
+  li:last-child {
+    border-right:none;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
   
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+
   .left {
     background-color: plum;
     grid-area: left;
@@ -81,14 +101,7 @@ body {
         font-size: 15px;    
         font-family: "Open Lato", sans-serif; 
       }  
-    }
-    a:link {
-      color: blue;
-    }
-    a:visited {
-      color: purple;
-    }
-      
+
         input[type=text], select {
             width: 60%;
             padding: 12px 20px;
