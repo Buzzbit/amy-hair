@@ -1,17 +1,30 @@
-html{
-  font-family:lato;
-}
-
-body {
-  background-color:pink;
-  position: relative;
-  margin:5px;
-}
 *{
   margin:0;
   padding:0;
   border:0;
   }
+html{
+  font-family:lato;
+}
+body {
+  background-color:pink;
+  position: relative;
+  margin:5px;
+}
+.logo1 {
+  position: absolute;
+  left:80%;
+  opacity:15%;
+}
+.logo2 {
+  position: absolute;
+  right:80%;
+  opacity:15%;
+}
+.welcome-image {
+position: relative;
+left:150px;
+}
   .container {
     display: grid;
     max-width: 900px;
@@ -88,6 +101,7 @@ body {
     border: solid 2px purple;
     border-radius:15px;
     max-width: 600px;
+   
   }
   
   .right {
