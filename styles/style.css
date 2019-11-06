@@ -1,3 +1,6 @@
+html{
+  font-family:lato;
+}
 
 body {
   background-color:pink;
@@ -20,7 +23,7 @@ body {
                           "left		right"
                           "footer	footer";
     grid-template-columns: 500x 500px;
-    grid-template-rows: 120px 40px 450px 200px;
+    grid-template-rows: 120px 48px 450px 200px;
   }
   h1 {
     font-family:lobster;
@@ -37,27 +40,23 @@ body {
     font-size:30px;
   }
   p {
-    max-width: 500px;
     text-align: center;
-    margin:2px;
+    margin:5px;
+    
   }
-  
-  header {
-    background-color:plum;
-    grid-area: header;
-    border: solid 2px purple;
-  }
-  
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow:none;
     background-color:purple;
+    position: relative;
+    width:168%;
   }
   li {
     float:left;
     border-right: 1px solid #bbb;
+    
 
   }
   li:last-child {
@@ -74,12 +73,21 @@ body {
   li a:hover:not(.active) {
     background-color: #111;
   }
-  
-
+  .active {
+    background-color: rgb(73, 67, 67);
+  }
+  header {
+    background-color:plum;
+    grid-area: header;
+    border: solid 2px purple;
+    border-radius:15px;
+  }
   .left {
     background-color: plum;
     grid-area: left;
     border: solid 2px purple;
+    border-radius:15px;
+    max-width: 600px;
   }
   
   .right {
@@ -87,13 +95,16 @@ body {
     grid-area: right;
     border: solid 2px purple;
     text-align:center;
-  }
+    border-radius:15px;
+    width:350px;
+ }
   
   footer {
     background-color: plum;
     grid-area: footer;
     border: solid 2px purple;
     height:auto;
+    border-radius:15px;
   }
 }
 
