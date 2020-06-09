@@ -1,1 +1,1 @@
-# amy-hair
+Amy's Hair - a side project ran alongside my Odin Project studies as a way to help me cement the skills and abilities I learn along the way in a hope to one day have this as a functional website for a home business. 
